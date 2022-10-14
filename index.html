@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+        <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+        <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+        <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="lib/styles/editor.css">
+    </head>
+    <body bgcolor="#fff">
+        <div class="editor">
+            <div class="editor__wrapper">
+                <div class="editor__left">
+                    <canvas id="editorWindow" class="editor__window"></canvas>
+                </div>
+                <div class="editor__right">
+                    <div id="editorCode" class="editor__code"></div>
+                    <div class="editor__right--footer">
+                        <button class="editor__btn editor__run">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ace Libraries -->
+        <script src="lib/js/ace-src/ace.js"></script>
+        <script src="lib/js/ace-src/mode-glsl.js"></script>
+        <script src="lib/js/ace-src/ext-language_tools.js"></script>
+        
+        <!-- Other Scripts -->
+        <script src="lib/js/editor.js"></script>
+    </body>
+</html>
