@@ -42,7 +42,7 @@ html, body {
 }
 
 .editor__right {
-    flex: 1.3;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -73,5 +73,6 @@ html, body {
 
 .editor__window {
     width: 100%;
+    height: 50%;
     border: 1px solid var(--editor-border);
 }
