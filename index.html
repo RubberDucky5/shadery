@@ -13,16 +13,19 @@
         <link rel="stylesheet" href="lib/styles/editor.css">
     </head>
     <body bgcolor="#fff">
+        <a download="shader.ligma" href="#" id="dwnload" style="display:none;"></a>
         <div class="editor">
             <div class="editor__wrapper">
                 <div class="editor__left">
                     <canvas id="editorWindow" class="editor__window"></canvas>
+                    <div class="editor__left--footer">
+                        <label class="editor__btn"><button id="editor__run"></button>></label>
+                        <label class="editor__btn"><button id="editor__save"></button>Save</label>
+                        <label  id="editor__load" class="editor__btn"><input type="file" accept=".ligma">Load</label>
+                    </div>
                 </div>
                 <div class="editor__right">
                     <div id="editorCode" class="editor__code"></div>
-                    <div class="editor__right--footer">
-                        <button id="editor__run" class="editor__btn">></button>
-                    </div>
                 </div>
             </div>
         </div>
