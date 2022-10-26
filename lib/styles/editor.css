@@ -63,27 +63,44 @@ html, body {
     flex: 1;
 }
 
+@keyframes rotate {
+    0%   {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
 .editor__btn {
     padding: .5em;
-    background-color: black;
+    background-color: #23262e;
     border: 1px solid var(--editor-border);
     color: #ddd;
     display: inline-block;
     font-family: sans-serif;
     transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-input[type="file"] {
-    display: none;
-}
-
 
 .editor__btn:hover {
-    background-color: #444;
+    background-color: #33363e;
+}
+
+.animate__rotonclk:focus {
+    animation: rotate 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.animate__rotonclk:active {
+    animation: none;
 }
 
 .editor__window {
     width: 100%;
     height: 60%;
     border: 1px solid var(--editor-border);
+}
+
+.hide {
+    display: none;
+} 
+
+.editor__svgimg {
+    filter: invert(100%);
 }
