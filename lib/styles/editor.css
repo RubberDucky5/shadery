@@ -67,6 +67,12 @@ html, body {
     0%   {rotate: 0deg;}
     100% {rotate: 360deg;}
 }
+@keyframes fly {
+    0%   {transform: translate(0, 0);}
+    50% {transform: translate(0, -150%);}
+    50.01% {transform: translate(0, 150%);}
+    100% {transform: translate(0, 0);}
+}
 
 .editor__btn {
     padding: .5em;
@@ -77,17 +83,26 @@ html, body {
     font-family: sans-serif;
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow: hidden ;
 }
 
 .editor__btn:hover {
     background-color: #33363e;
 }
 
-.animate__rotonclk:focus {
+.animate__rotonclk:focus > .editor__svgimg {
     animation: rotate 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.animate__rotonclk:active {
+.animate__rotonclk:active > .editor__svgimg {
+    animation: none;
+}
+
+.animate__flyonclk:focus > .editor__svgimg {
+    animation: fly 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.animate__flyonclk:active > .editor__svgimg {
     animation: none;
 }
 
